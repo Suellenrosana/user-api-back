@@ -22,22 +22,23 @@ Este projeto é uma aplicação backend para gerenciar usuários utilizando Node
 
 <li>Configure a variável de ambiente DATABASE_URL no arquivo .env com a URL de conexão do seu MongoDB.</li>
 
-generator client {
-provider = "prisma-client-js"
-}
-
-datasource db {
-provider = "mongodb"
-url      = env("DATABASE_URL")
-}
-
-model User {
-id    String @id @default(auto()) @map("_id") @db.ObjectId
-name  String
-age   Int
-email String @unique
-
-}
+  ```sh
+   generator client {
+  provider = "prisma-client-js"
+  }
+  
+  datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+  }
+  
+  model User {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  name  String
+  age   Int
+  email String @unique
+  
+  }
 
 
 
