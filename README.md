@@ -1,7 +1,7 @@
 <h1> User API 📡</h1>
 
-Este projeto é uma aplicação backend para gerenciar usuários utilizando Node.js, Express, Cors e Prisma. Ele permite listar, criar, editar e excluir usuários em um banco de dados MongoDB.
-Biblioteca Axios para conexão das requisições get, post, put e delete criadas numa API desenvolvida com o auxílio do PrismaSoft conectada ao banco de dados MongoDB.</li>
+Esta é uma aplicação Backend para gerenciar usuários utilizando Node.js, Express, Cors e Prisma. Ele nos permite listar, criar, editar e excluir usuários em um banco de dados.
+Utilizaod a biblioteca Axios para conexão das requisições get, post, put e delete criadas numa API desenvolvida com o auxílio do PrismaSoft conectada ao banco de dados MongoDB.</li>
 
 
 <h3>Tecnologias utilizadas:</h3>
