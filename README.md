@@ -1,32 +1,47 @@
-<h1> User Registration</h1>
+<h1> User API 📡</h1>
 
-Projeto Full Stack: Página Web para cadastro de usuários, onde podemos solicitar os armazenamentos de nome, idade e email no banco de dados.
-
+Este projeto é uma aplicação backend para gerenciar usuários utilizando Node.js, Express, Cors e Prisma. Ele permite listar, criar, editar e excluir usuários em um banco de dados MongoDB.
 
 <h2>Funcionalidades</h2>
 
 <ul>
 
-<li>Para estilização foi utilizado o ‘Styled Components’, uma biblioteca do CSS que nos permite utilizar 'props'.,</li>
-
-<li>Utilização do Hook ‘UseNavigate’ para navegar entre as páginas 'Home' e 'Users Lists' na web;</li>
-
-<li>Foram utilizados react HOOKS (UseState, UseRef) para usar recursos do React;</li>
-
-<li>Para renderização e melhor desempenho de navegação foi utilizada a biblioteca 'react-router-dom';</li>
-
-<li>Biblioteca Axios para conexão das requisições get, post, put e delete criadas numa API desenvolvida com o auxílio do PrismaSoft conectada ao banco de dados não-relacional MongoDB para armazenamento das informações requeridas pelo UI.</li>
+<li>Biblioteca Axios para conexão das requisições get, post, put e delete criadas numa API desenvolvida com o auxílio do PrismaSoft conectada ao banco de dados MongoDB.</li>
+<li>Configure a variável de ambiente DATABASE_URL no arquivo .env com a URL de conexão do seu MongoDB.</li>
 
 </ul>
 
 <h3><b>Tecnologias utilizadas:</b></h3>
- HTML, CSS, Java Script, React, Styled Components, Prisma, Axios, MongoDB, 
-<br>
-<br>
- 🚀
 
-<h2>🔍 Design Web</h2>
-<img src=''>
+<li>Node.js</li>
+<li>Prisma</li>
+<li>Axios</li>
+<li>MongoDB</li>
+
+<h3><b>Prisma - Jason:</b></h3>
+
+<li>Configure a variável de ambiente DATABASE_URL no arquivo .env com a URL de conexão do seu MongoDB.</li>
+
+generator client {
+provider = "prisma-client-js"
+}
+
+datasource db {
+provider = "mongodb"
+url      = env("DATABASE_URL")
+}
+
+model User {
+id    String @id @default(auto()) @map("_id") @db.ObjectId
+name  String
+age   Int
+email String @unique
+
+}
+
+
+
+
 
 
 
