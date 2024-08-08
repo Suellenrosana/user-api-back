@@ -11,9 +11,9 @@ Biblioteca Axios para conexão das requisições get, post, put e delete criadas
 <li>Axios</li>
 <li>MongoDB</li>
 
-<h3><b>Prisma - Jason:</b></h3>
+<h2<b>Prisma - Jason:</b></h2>
 
-<li>Configure a variável de ambiente DATABASE_URL no arquivo .env com a URL de conexão do seu MongoDB.</li>
+Configure a variável de ambiente DATABASE_URL no arquivo .env com a URL de conexão do seu MongoDB.</li>
 
   ```sh
    generator client {
