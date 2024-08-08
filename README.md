@@ -11,7 +11,7 @@ Biblioteca Axios para conexão das requisições get, post, put e delete criadas
 <li>Axios</li>
 <li>MongoDB</li>
 
-<h2>Configure Prisma - Estrutura Jason:</b></h2>
+<h2>Configure o Prisma - Estrutura Jason:</b></h2>
 
 Configure a variável de ambiente DATABASE_URL no arquivo .env com a URL de conexão do seu MongoDB.</li>
 
