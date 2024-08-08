@@ -16,22 +16,23 @@ Biblioteca Axios para conexão das requisições get, post, put e delete criadas
 Configure a variável de ambiente DATABASE_URL no arquivo .env com a URL de conexão do seu MongoDB.</li>
 
   ```sh
-   generator client {
+  generator client {
   provider = "prisma-client-js"
-  }
-  
-  datasource db {
+}
+
+datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
-  }
-  
-  model User {
+}
+
+model User {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
   name  String
   age   Int
   email String @unique
+}
+
   
-  }
 
 
 
